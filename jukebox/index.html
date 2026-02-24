@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+        
+
     <style>
         * {
             box-sizing: border-box;
@@ -98,9 +100,9 @@
     <h1> Escolha uma música </h1>
 
     <div class="Searching_song">
-        <input id="buscaMusica" placeholder="Busque uma música ou artista..." type="text"> </input>
-        <button onclick="buscarMusicas()"> Buscar </button>
+        <input id="buscaMusica" placeholder="Busque uma música ou artista..." type="text"> <button onclick="buscarMusicas()"> Buscar </button>
     </div>
+    
 
     <div class="filters_navigations">
         <div class="button_default">
@@ -148,44 +150,11 @@
 
     </div>
 
-    <div class="sugestion-song" <input class="sugestion" placeholder="Sugira uma música"> </input>
+    <div class="sugestion-song">
+         <input class="sugestion" placeholder="Sugira uma música"> </input>
     </div>
 
+
 </body>
-
-
-<script>
-
-    function pesquisarMusicas(lista, buscaMusica) {
-        const musicaSearch = buscaMusica.toLowerCase().trim();
-
-        return lista.filter(musica =>
-            musica.titulo.toLowerCase().includes(termo) ||
-            musica.artista.toLowerCase().includes(termo) ||
-            musica.idioma.toLowerCase().includes(termo) ||
-            musica.genero.toLowerCase().includes(termo)
-        );
-
-    }
-
-
-    /*const  = document.ElementById("buscaMusica");
-    console.log(musicaSearch);
-
-    searchInput.addEventListener('input', (event) => {}*/
-
-
-    /*alert("Bem-vindo à Jukebox! Escolha sua música favorita e aproveite o som!");
-    window.alert("Bem-vindo à Jukebox! Escolha sua música favorita e aproveite o som!");
-    window.confirm("Deseja realmente escolher essa música?");
-    window.prompt("Qual é o seu nome?");
-    window.prompt("Qual música você gostaria de ouvir?");
-    var delete1 = window.confirm("Tem certeza que deseja excluir esta música da sua lista de reprodução?"); */
-
-    if (delete1) {
-        console.log("Música excluída da lista de reprodução.");
-    }
-</script>
-
 
 </html>
